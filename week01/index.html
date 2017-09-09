@@ -9,6 +9,24 @@
   <title>Profile</title>
 </head>
 <body>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '458545831192170',
+        xfbml      : true,
+        version    : 'v2.10'
+      });
+      FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
   <div class="timeline-cover">
     <div class="cover-photo">
       <img src="https://cdn.namuwikiusercontent.com/storage/7c3ee389458c872534626906f36460362cb042446d6807caa14245a833ac99d57827552597e54c127476dfd6185f448381ae6bf59c253b800b4085c9bdbc24c8e19bf1e0ae4e27fad2f0f3cffd55db21?e=1507509996&k=ayB0U2D6KNy1gNEj925cdg" alt="">
